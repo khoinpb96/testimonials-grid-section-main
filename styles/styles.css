@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+body {
+  background: #eef1f6;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  max-width: 972px;
+  margin: 2.5rem auto;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 22px 26px;
+      grid-template-areas: "a1 a1 a2 a5 " "a3 a4 a4 a5 ";
+}
+
+.container .grid-item {
+  border-radius: 6px;
+  padding: 22px 28px;
+}
+
+.container .item1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: a1;
+  background: #7541c8 url(../images/bg-pattern-quotation.svg) no-repeat right 15% top 0%;
+  background-size: 20%;
+}
+
+.container .item2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: a2;
+  background-color: #48556a;
+}
+
+.container .item3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: a3;
+  background-color: white;
+}
+
+.container .item4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: a4;
+  background-color: #19212e;
+}
+
+.container .item5 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  grid-area: a5;
+  background-color: white;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ava {
+  width: 28px;
+  height: 28px;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin-right: 14px;
+  margin-bottom: 18px;
+}
+
+.dark {
+  color: #19212e;
+}
+
+.light {
+  color: #ecf2f8;
+}
+
+.f10 {
+  font-size: 10px;
+}
+
+.f12 {
+  font-size: 12px;
+}
+
+.f14 {
+  font-size: 16px;
+  margin-bottom: 22px;
+  font-weight: 500;
+}
+
+.o7 {
+  opacity: 0.7;
+}
+
+.o5 {
+  opacity: 0.5;
+}
+
+@media (max-width: 500px) {
+  .container {
+    grid-template: "a1" "a2" "a3" "a4" "a5";
+    padding: 0 22px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
